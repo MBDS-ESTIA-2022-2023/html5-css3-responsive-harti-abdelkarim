@@ -1,0 +1,85 @@
+html, body {
+  height:100%; 
+  width:100%;
+  background-color:#FAF5F5;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 300px 400px 100px;
+	grid-template-areas:"header" "main_top" "main" "footer";
+	justify-content: stretch;
+	border: 1px solid rgb(255, 255, 255, 0.5);
+	border-color: #bbbbbb;
+}
+
+.header { 
+	grid-area: header;
+	justify-self: stretch;
+	background-color:#3390ff;
+	color: white;
+ }
+ 
+ .header > h1 {
+	 margin-left: 30px;
+ }
+ 
+.main_top { 
+	grid-area: main_top;
+	background-color:#E7F0EA;
+	display :flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+.main { 
+	grid-area: main;
+	display :flex;
+	flex-direction:column ;
+	justify-content: center;
+	align-items:center;
+
+}
+
+
+.footer { 
+	grid-area: footer; 
+	justify-self: stretch;
+	background-color:#3390ff;
+	color: white;
+}
+
+#btn_Signin{
+	background-color:#3390ff;
+	color: white;
+	border: none;
+	width: 300px;
+	height: 50px;
+	font-size: 130%
+}
+#Username{
+	width: 300px;
+	height: 50px;
+	background-color:grix;	
+	font-size: 120%
+}
+#pass{
+	width: 300px;
+	height: 50px;
+	background-color:grix;	
+	font-size: 120%
+}
+ .footer > h2 {
+	 margin-left: 30px;
+ }
+ 
+ @media screen
+ {	
+ 
+	 body {
+		 width:80%;
+		 margin:0 auto;}
+ }
+
